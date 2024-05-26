@@ -1,0 +1,76 @@
+body{
+    background-color: lightblue;
+    font-family:sans-serif;
+    padding: 100px;
+}
+
+.navigation{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("images/table-background.jpg")
+}
+
+.name {
+    flex: 1; 
+}
+
+.picture {
+    flex: 2; 
+}
+
+.picture img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.city-name{
+    flex:1
+}
+.city-name img {
+    width: 500px;
+}
+
+.city-text{
+    flex: 1;
+    margin-top: 50px;
+}
+
+
+
+.sub-image{
+    width: 300px;
+}
+
+
+.histo-image{
+    width: 250px;
+}
+.historical-place{
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically in the center */
+    margin-bottom: 20px; /* Space between sections */
+}
+.text-content {
+    flex: 1; /* Take up remaining space */
+}
+.subject{
+    margin: 0.5em;
+    padding: 1em;
+    
+    flex: 1;
+}
+
+@media (min-width:960px){
+    .subjects{
+        display: flex;
+    }
+
+    .detail{
+        display: flex;
+    }
+
+    .city{
+        display: flex;
+    }
+}
+
