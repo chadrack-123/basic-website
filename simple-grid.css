@@ -15,7 +15,6 @@ body {
   padding: 0;
   left: 0;
   top: 0;
-  font-size: 100%;
   background-color: lightgrey;
 }
 
@@ -24,22 +23,55 @@ body {
 * {
   font-family: 'Lato', Helvetica, sans-serif;
   color: #333447;
-  line-height: 1.5;
+ 
 }
 
 /*CUSTOM */
 
 .city-image{
-  width: 500px;
+  width: 100%;
+  position: relative;
 }
 
 .subject-image{
-  width: 300px;
+  width: 100%;
+  height: 250px;
 }
 
 .chad-image{
-  width: 600px;
+  width: 100%
 }
+
+.name-text{
+  text-align: center;
+}
+
+.japan{
+  text-align: center;
+}
+.city-text{
+  padding-left: 20px;
+}
+.language{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mytable{
+  margin: auto;
+}
+
+.subject-title{
+  text-align: center;
+}
+.histo-image{
+  float: right;
+}
+
+.histo-image{
+  width: 100px;
+  padding: 10px;
+}
+
 
 /* TYPOGRAPHY */
 
@@ -105,17 +137,19 @@ p {
   text-align: justify;
 }
 
+
 /* ==== GRID SYSTEM ==== */
 
 .container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  
+  margin-left: 10px;
+  margin-right: 10px;
+  
 }
 
 .row {
-  position: relative;
   width: 100%;
+  
 }
 
 .row [class^="col"] {
@@ -136,11 +170,14 @@ p {
 .col-10,
 .col-11,
 .col-12 {
-  width: 96%;
+  width: 95%;
+  
+  position: relative;
 }
 
 .col-1-sm {
   width: 4.33%;
+  
 }
 
 .col-2-sm {
@@ -197,16 +234,12 @@ p {
   display: none;
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
-  .container {
-    width: 80%;
-  }
-  .chad-image{
-    width: 500px;
-  }
+@media only screen and (min-width: 33.75em) {  
+  
+  
 }
 
-@media only screen and (min-width: 45em) {  /* 720px */
+@media only screen and (min-width: 45em) {  
   .col-1 {
     width: 4.33%;
   }
@@ -259,17 +292,28 @@ p {
     display: block;
   }
 
-  .chad-image{
-    width: 500px;
-  }
+  
+    
+  
 }
 
-@media only screen and (min-width: 60em) { /* 960px */
-  .container {
-    width: 75%;
-    max-width: 60rem;
-  }
-  .chad-image{
-    width: 500px;
-  }
+@media only screen and (min-width: 60em) { 
+  
+  
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  .chad-image{
+    width: 100%
+  }
+
+ 
+  #histo-image-left{
+    float: left;
+  }
+  
+}
+
+

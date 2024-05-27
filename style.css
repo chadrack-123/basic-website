@@ -1,7 +1,7 @@
 body{
     background-color: lightblue;
     font-family:sans-serif;
-    padding: 100px;
+    padding: 20px;
 }
 
 .navigation{
@@ -10,24 +10,31 @@ body{
     background-image: url("images/table-background.jpg")
 }
 
-.name {
-    flex: 1; 
+.name-container {
+    flex: 1;
+   
+
+}
+.name{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
 }
 
-.picture {
+.picture-container {
     flex: 2; 
+    
 }
 
-.picture img {
-    max-width: 100%; 
-    height: auto; 
+.chad-image{
+    width: 100%;
 }
 
 .city-name{
     flex:1
 }
 .city-name img {
-    width: 500px;
+    width: 90%;
 }
 
 .city-text{
@@ -35,20 +42,25 @@ body{
     margin-top: 50px;
 }
 
+.city-para{
+    font-size: 18px;
+    font-weight: 300;
+}
 
 
 .sub-image{
-    width: 300px;
+    width: 100%;
+    height: 250px;
 }
 
 
 .histo-image{
-    width: 250px;
+    width: 200px;
+    padding: 10px;
+    float:right;
 }
 .historical-place{
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically in the center */
-    margin-bottom: 20px; /* Space between sections */
+   flex: 1;
 }
 .text-content {
     flex: 1; /* Take up remaining space */
@@ -56,8 +68,8 @@ body{
 .subject{
     margin: 0.5em;
     padding: 1em;
-    
     flex: 1;
+    
 }
 
 @media (min-width:960px){
@@ -69,8 +81,18 @@ body{
         display: flex;
     }
 
-    .city{
+    .city-container{
         display: flex;
     }
+
+   
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    #histo-image-left{
+        float: left;
+    }
+    
+}
